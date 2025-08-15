@@ -238,7 +238,7 @@
   .small{ font-size:.9rem; color:#9fb1cc; }
   
   /* Modal */
-  .modal{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.5); padding:1rem; }
+  .modal{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.5); padding:1rem; overflow-y: scroll; }
   .modal[aria-hidden="false"]{ display:flex; }
   .modal__dialog{ max-width:720px; width:min(720px, 92vw); background:#fff; color:#0b162b; border-radius: var(--radius-lg); padding:1.25rem; box-shadow: var(--shadow); position:relative; }
   .modal__close{ position:absolute; right: clamp(1rem, 3vw, 2rem); top: clamp(1rem, 3vw, 2rem); background:#0b162b; color:#fff; border:0; border-radius:999px; width:36px; height:36px; cursor:pointer; }
