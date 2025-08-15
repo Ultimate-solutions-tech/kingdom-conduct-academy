@@ -261,3 +261,39 @@
     .btn{ transition: none; }
   }
   
+  /* =========================
+   Mobile tweaks (≤ 600px)
+   ========================= */
+@media (max-width: 600px) {
+  /* Slightly smaller type scale */
+  :root{
+    --fs-900: clamp(1.75rem, 6vw + 0.5rem, 2.25rem); /* hero title */
+    --fs-700: clamp(1.125rem, 3.5vw + .4rem, 1.35rem); /* section titles */
+    --fs-600: 1.1rem;   /* hero subtitle / larger body */
+    --fs-500: 1rem;     /* buttons / labels */
+    --fs-400: 0.95rem;  /* body */
+    --fs-300: 0.9rem;   /* small text */
+  }
+
+  /* Improve hero readability on small screens */
+  .hero__content { padding-block: 4.5rem; }
+  .hero__subtitle { line-height: 1.55; margin-top: .5rem; }
+
+  /* Section headings tighter spacing */
+  .section__header { margin-bottom: 1.25rem; }
+  .section__header h2 { margin-bottom: .25rem; }
+
+  /* Countdown: make it 2 x 2 */
+  .countdown{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+    justify-items: stretch;
+  }
+  .countdown > div{
+    min-width: 0;       /* let boxes shrink nicely */
+    padding: .6rem .7rem;
+  }
+  .cd-num{ font-size: 1.25rem; } /* keep good touch size */
+  .cd-unit{ font-size: .75rem; }
+}
