@@ -81,7 +81,7 @@
     padding:.85rem 1.1rem; border-radius:999px; box-shadow: var(--shadow-soft);
     transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
   }
-  .btn:hover{ transform: translateY(-1px); background:var(--gold-700); box-shadow: 0 10px 20px rgba(212,175,55,.25);}
+  .btn:hover{ transform: translateY(-1px); background:var(--gold-700); box-shadow: 0 10px 20px rgba(212,175,55,.25); color: #fafcff;}
   .btn--sm{ padding:.5rem .75rem; font-size: var(--fs-300);}
   .btn--lg{ padding:1rem 1.25rem; font-size: var(--fs-500);}
   
